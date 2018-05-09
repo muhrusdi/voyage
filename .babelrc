@@ -3,6 +3,8 @@
     "next/babel"
   ],
   "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
     ["emotion", { "inline": true }]
   ]
 }

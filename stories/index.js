@@ -11,5 +11,5 @@ storiesOf('Button', module)
     <Button onClick={action('clicked')}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
   ))
   .add('weith style', () => (
-    <Button>With Style</Button>
+    <Button >With Style</Button>
   ))
