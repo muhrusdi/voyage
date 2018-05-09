@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import { css } from 'emotion' 
+import Button from '../components/Button'
 
 class Index extends Component {
   render() {
     return (
-      <div>test</div>
+      <div className={css`
+        color: red;
+      `}>
+        <Button>test</Button>
+      </div>
     )
   }
 }
