@@ -5,6 +5,12 @@
   "plugins": [
     "transform-decorators-legacy",
     "transform-class-properties",
-    ["emotion", { "inline": true }]
+    ["emotion", { "inline": true }],
+    ["import",
+      {
+        "libraryName": "antd",
+        "style": false
+      }
+    ]
   ]
 }

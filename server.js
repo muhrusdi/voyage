@@ -26,6 +26,10 @@ app.prepare()
       return handle(req, res)
     })
 
+    server.get('/service-worker.js', (req, res) => {
+      app.serveStatic(req, res, path.resolve('./static/sw.js'));
+    })
+
     server.listen(port, (err) => {
       if (err) throw err
       console.log(`> Ready on http://localhost:${port}`)
