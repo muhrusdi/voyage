@@ -1,5 +1,7 @@
 import Document, { Head, Main, NextScript } from 'next/document'
 import { extractCritical } from 'emotion-server'
+import { TypographyStyle, GoogleFont } from 'react-typography'
+import typography from '../utils/typography'
 
 export default class MyDocument extends Document {
   static getInitialProps ({ renderPage }) {
@@ -21,6 +23,8 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <TypographyStyle typography={typography} />
+          <GoogleFont typography={typography} />
         </Head>
         <body>
           <Main/>
