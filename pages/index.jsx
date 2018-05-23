@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { css } from 'emotion' 
 import Container from '../components/Container'
-import { Button } from 'antd'
 
 class Index extends Component {
   render() {

@@ -5,12 +5,13 @@
   "plugins": [
     "transform-decorators-legacy",
     "transform-class-properties",
-    ["emotion", { "inline": true }],
     ["import",
       {
         "libraryName": "antd",
         "style": false
       }
-    ]
+    ],
+    "styled-jsx/babel",
+    ["emotion", { "inline": true , "importedNames": { "css": "emotion" }}]
   ]
 }

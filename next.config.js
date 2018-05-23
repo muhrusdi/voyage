@@ -3,10 +3,6 @@ const withCss = require('@zeit/next-css')
 const path = require('path')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
-if (typeof require !== 'undefined') {
-  require.extensions['.css'] = (file) => {}
-}
-
 module.exports = withCss(
   {
     webpack: (config, { dev }) => {
