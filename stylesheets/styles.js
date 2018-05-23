@@ -16,7 +16,7 @@ export default () => (
       height: 2px; 
     }
 
-      #nprogress .peg {
+    #nprogress .peg {
       display: block;
       position: absolute;
       right: 0px;
@@ -56,23 +56,6 @@ export default () => (
     .nprogress-custom-parent #nprogress .bar {
       position: absolute;
     }
-    
-    .slider-primary .slick-slide {
-      height: 500px;
-      text-align: center;
-      line-height: 160px;
-      background: #fff;
-      overflow: hidden;
-    }
-    
-    .slider-thumb .slick-slide {
-      text-align: center;
-      height: 100px;
-      line-height: 160px;
-      background: #fff;
-      overflow: hidden;
-    }
-    
     
     @-webkit-keyframes nprogress-spinner {
       0%   { -webkit-transform: rotate(0deg); }
