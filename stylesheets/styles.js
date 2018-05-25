@@ -1,11 +1,36 @@
+import philosopherB from '../static/fonts/Philosopher-Bold.ttf'
+import philosopherI from '../static/fonts/Philosopher-Italic.ttf'
+import philosopherR from '../static/fonts/Philosopher-Regular.ttf'
+
 export default () => (
   <style jsx global>{`
+    @font-face {
+      font-family: 'Philosopher';
+      font-style: normal;
+      font-weight: normal;
+      src:local('☺︎'), url("${philosopherR}") format("woff"), url("${philosopherR}") format("opentype");
+    }
+
+    @font-face {
+      font-family: 'Philosopher';
+      font-style: normal;
+      font-weight: bold;
+      src:local('☺︎'), url("${philosopherB}") format("woff"), url("${philosopherB}") format("opentype");
+    }
+
+    @font-face {
+      font-family: 'Philosopher';
+      font-style: italic;
+      font-weight: normal;
+      src:local('☺︎'), url("${philosopherI}") format("woff"), url("${philosopherI}") format("opentype");
+    }
+
     #nprogress {
       pointer-events: none;
     }
     
     #nprogress .bar {
-      background: #29d;
+      background: #F78723;
     
       position: fixed;
       z-index: 1031;
@@ -22,7 +47,7 @@ export default () => (
       right: 0px;
       width: 100px;
       height: 100%;
-      box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+      box-shadow: 0 0 10px #F78723, 0 0 5px #F78723;
       opacity: 1.0;
       transform: rotate(3deg) translate(0px, -4px);
     } 
@@ -41,8 +66,8 @@ export default () => (
       box-sizing: border-box;
     
       border: solid 1px transparent;
-      border-top-color: #29d;
-      border-left-color: #29d;
+      border-top-color: #F78723;
+      border-left-color: #F78723;
       border-radius: 50%;
       animation: nprogress-spinner 400ms linear infinite;
     }
